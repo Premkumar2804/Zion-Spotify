@@ -131,7 +131,9 @@
             <input type="text" id="song-artist" placeholder="Artist Name" autocomplete="off"
               class="w-full bg-zinc-800 text-white p-3 rounded mb-3 border-none focus:ring-2 focus:ring-green-500 outline-none" />
             <label class="block text-zinc-400 text-sm mb-2">Select Audio Files</label>
-            <input type="file" id="audio-file" accept="audio/*" multiple
+            <input type="file" id="audio-file"
+              accept="audio/*, .mp3, .wav, .m4a, .flac, .ogg, audio/mpeg, audio/mp3, audio/wav, audio/x-wav, audio/aac, audio/ogg, audio/webm"
+              multiple
               class="block w-full text-sm text-zinc-400 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:font-semibold file:bg-green-500 file:text-black hover:file:bg-green-400 cursor-pointer" />
             <p id="drop-label" class="text-xs text-zinc-500 mt-1 mb-3">No files selected</p>
             <div id="upload-progress-wrap" style="display:none;" class="mb-3">
@@ -346,8 +348,8 @@
             <path
               d="M10.59 9.17L5.41 4 4 5.41l5.17 5.17 1.42-1.41zM14.5 4l2.04 2.04L4 18.59 5.41 20 17.96 7.46 20 9.5V4h-5.5zm.33 9.41l-1.41 1.41 3.13 3.13L14.5 20H20v-5.5l-2.04 2.04-3.13-3.13z" />
           </svg></button>
-        <button id="btn-prev-fs" class="ctrl-btn p-2 hover:opacity-80"><svg width="36" height="36"
-            fill="currentColor" viewBox="0 0 24 24">
+        <button id="btn-prev-fs" class="ctrl-btn p-2 hover:opacity-80"><svg width="36" height="36" fill="currentColor"
+            viewBox="0 0 24 24">
             <path d="M6 6h2v12H6zm3.5 6 8.5 6V6z" />
           </svg></button>
         <button id="btn-play-pause-fs"
@@ -360,12 +362,12 @@
             <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z" />
           </svg>
         </button>
-        <button id="btn-next-fs" class="ctrl-btn p-2 hover:opacity-80"><svg width="36" height="36"
-            fill="currentColor" viewBox="0 0 24 24">
+        <button id="btn-next-fs" class="ctrl-btn p-2 hover:opacity-80"><svg width="36" height="36" fill="currentColor"
+            viewBox="0 0 24 24">
             <path d="M6 18l8.5-6L6 6v12zm2.5-6 5.5 3.9V8.1L8.5 12zM16 6h2v12h-2z" />
           </svg></button>
-        <button id="btn-repeat-fs" class="ctrl-btn p-2 hover:text-white"><svg width="24" height="24"
-            fill="currentColor" viewBox="0 0 24 24">
+        <button id="btn-repeat-fs" class="ctrl-btn p-2 hover:text-white"><svg width="24" height="24" fill="currentColor"
+            viewBox="0 0 24 24">
             <path d="M7 7h10v3l4-4-4-4v3H5v6h2V7zm10 10H7v-3l-4 4 4 4v-3h12v-6h-2v4z" />
           </svg></button>
       </div>
